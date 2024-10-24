@@ -17,5 +17,8 @@
 				"ms-dotnettools.csdevkit"
 			]
 		}
-	}
+	},
+	"forwardPorts": [
+		5000
+	]
 }
