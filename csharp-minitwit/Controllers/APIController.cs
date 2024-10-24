@@ -132,12 +132,12 @@ public class ApiController(
         }
 
         // Check if request is from simulator
-        var notFromSimResponse = NotReqFromSimulator(Request);
-        if (!notFromSimResponse)
-        {
-            _logger.LogWarning(logMessageUnauthorized, Request.HttpContext.Connection.RemoteIpAddress);
-            return Unauthorized();
-        }
+        // var notFromSimResponse = NotReqFromSimulator(Request);
+        // if (!notFromSimResponse)
+        // {
+        //     _logger.LogWarning(logMessageUnauthorized, Request.HttpContext.Connection.RemoteIpAddress);
+        //     return Unauthorized();
+        // }
         if (!string.IsNullOrEmpty(model.content))
         {
             var userId = await GetUserIdAsync(username);
