@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "published-linux-arm",
+            "type": "shell",
+            "command": "dotnet publish --runtime linux-arm64 --configuration Release --self-contained true --output ./publish",
+            "options": {
+                "cwd": "${workspaceFolder}/csharp-minitwit/"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "run-published-app",
+            "type": "shell",
+            "command": "dotnet csharp-minitwit.dll",
+            "options": {
+                "cwd": "${workspaceFolder}/csharp-minitwit/publish/"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
