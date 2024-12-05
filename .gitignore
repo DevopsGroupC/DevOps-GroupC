@@ -1,3 +1,6 @@
+# Energy Measurement
+cs/
+
 # Virtual environment files
 minitwitvenv
 
@@ -141,7 +144,6 @@ cython_debug/
 
 # IDE specific settings
 .idea/
-.vscode/
 *.swp
 
 ## Ignore Visual Studio temporary files, build results, and

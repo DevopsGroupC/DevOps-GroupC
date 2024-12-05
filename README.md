@@ -28,6 +28,9 @@
   </ol>
 </details>
 
+## Enegery Measurement
+To run the project, ensure that a postgres database is running, navigate to [csharp-minitwit/](./csharp-minitwit/) and run `dotnet run`
+
 ## About The Project
 This project is part of the course [DevOps, Software Evolution and Software Maintenance, MSc (Spring 2024)](https://learnit.itu.dk/local/coursebase/view.php?ciid=1391)
 

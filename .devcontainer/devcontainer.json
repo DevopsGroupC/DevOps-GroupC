@@ -1,0 +1,24 @@
+{
+	"name": "DevopsGroupC",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/dotnet:2": {
+			"version": "8.0"
+		}
+	},
+	"runArgs": [
+		"--network=host"
+	],
+	"postCreateCommand": "bash .devcontainer/init.sh",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-dotnettools.csharp",
+				"ms-dotnettools.csdevkit"
+			]
+		}
+	},
+	"forwardPorts": [
+		5000
+	]
+}
