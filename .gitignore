@@ -1,7 +1,5 @@
 # Energy Measurement
-cs-default/
-cs-disabled/
-cs-enabled/
+cs/
 
 # Virtual environment files
 minitwitvenv

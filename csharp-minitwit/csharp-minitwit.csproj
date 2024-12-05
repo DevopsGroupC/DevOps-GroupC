@@ -7,6 +7,7 @@
     <RootNamespace>csharp_minitwit</RootNamespace>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn> <!-- Disable warning CS1591: Missing XML comment for publicly visible type or member -->
+    <ServerGarbageCollection>true</ServerGarbageCollection>
   </PropertyGroup>
 
   <ItemGroup>

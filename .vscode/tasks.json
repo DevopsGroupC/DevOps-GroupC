@@ -4,7 +4,7 @@
         {
             "label": "published-linux-arm",
             "type": "shell",
-            "command": "dotnet publish ${input:csharp-project} --runtime linux-arm64 --configuration Release --self-contained true --output ../${input:publish-output-name}",
+            "command": "dotnet publish --runtime linux-arm64 --configuration Release --self-contained true --output ../cs/",
             "options": {
                 "cwd": "${workspaceFolder}/csharp-minitwit/"
             },
@@ -18,30 +18,6 @@
                 "cwd": "${workspaceFolder}/csharp-minitwit/publish/"
             },
             "problemMatcher": []
-        }
-    ],
-    "inputs": [
-        {
-            "id": "csharp-project",
-            "type": "pickString",
-            "description": "Name of the project file used for the publish",
-            "default": "csharp-minitwit.csproj",
-            "options": [
-                "csharp-minitwit.csproj",
-                "csharp-minitwit-disabled.csproj",
-                "csharp-minitwit-enabled.csproj"
-            ]
-        },
-        {
-            "id": "publish-output-name",
-            "type": "pickString",
-            "description": "Name of the output folder of the publish",
-            "default": "cs-default",
-            "options": [
-                "cs-default",
-                "cs-disabled",
-                "cs-enabled"
-            ]
         }
     ]
 }
